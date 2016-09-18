@@ -1,0 +1,40 @@
+{
+	"manifest_version": 2,
+	
+	"name": "FilteReddit",
+	"description": "Simple extension that hides reddit posts and comments you don't want to see, without all the frills. Blacklist content by keyword.",
+	"version": "1.0",
+	
+	//"icons": { },
+	
+	"browser_action": {
+		"default_icon": "img/icons/icon.png",
+		"default_popup": "options.html",
+		"default_title": "FilteReddit"
+	},
+	
+	"content_scripts": [
+		{
+			//"exclude_globs": [ "*://www.youtube.com/upload/*" ],
+			//"css": ["style.css"],
+			"js": ["js/script.js"],
+			"matches": ["*://www.reddit.com/*"],
+			"run_at": "document_end"
+		} 
+	],
+	
+	"background": {
+		"scripts": [ "js/options.js" ],
+		"persistent": false
+	},
+	
+	"options_page": "options.html",
+	
+	"permissions": [
+		"storage",
+		"activeTab",
+		"tabs",
+		"https://ajax.googleapis.com/",
+		"*://www.reddit.com/*"
+	]
+}

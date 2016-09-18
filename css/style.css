@@ -1,0 +1,39 @@
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 100%;
+	width: 400px;
+}
+#status {
+	/* avoid an excessively wide status text */
+	white-space: pre;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 400px;
+}
+
+.container {
+	display: block;
+}
+
+.list-container {
+	width: 75%;
+	display: inline-block;
+}
+
+.right-align {
+	float: right;
+}
+
+.list {
+	list-style-type: none;
+	width: 80%;
+	padding: 0px;
+}
+
+.list-item {
+	width: 95%;
+}
+
+.list-item-part {
+	display: inline;
+}

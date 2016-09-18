@@ -1,0 +1,60 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+		width: 350px;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+	  .main {
+		width: 50%;
+	  }
+	  
+	  .add-or-remove {
+		display: inline;
+	  }
+	  
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+	<script src="js/blacklist.js"></script>
+	<script src="js/options.js"></script>
+	<script src="js/popup.js"></script>
+  </head>
+  <body>
+    <!--
+	  - Image search API used in popup.js is not working. Commenting out for now.
+	<div id="status"></div>
+    <img id="image-result" hidden>
+	-->
+	<div class="main">
+		<h1>Blacklist</h1>
+		<!-- TODO: use <ul> instead of <form> / <div> -->
+		<form>
+			<div class="add-or-remove">Trump </div><button class="add-or-remove">x</button><br />
+			<div class="add-or-remove">Clinton </div><button class="add-or-remove">x</button><br />
+			<input></input><button>Add to list</button>
+		</form>
+	</div>
+  </body>
+</html>
+

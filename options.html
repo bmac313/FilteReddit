@@ -1,0 +1,48 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+	<head>
+		<title>FilteReddit options</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!--
+		  - JavaScript and HTML must be in separate files: see our Content Security
+		  - Policy documentation[1] for details and explanation.
+		  -
+		  - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+		 -->
+		<script src="js/options.js"></script>
+		<script src="js/popup.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="list-container">
+				<h1>Blacklist</h1>
+				<ul id="blacklist" class="list">
+					<!-- List items are inserted here by options.js -->
+				</ul>
+				<input id="bl-input-box" type="text"></input><br />
+				<button id="add-blacklist">Add to list</button><br />
+			</div>
+		<!-- Whitelist to be implemented in later version
+			<div class="list-container right-align">
+			<h1>Whitelist</h1>
+				<ul class="list">
+					<li class="list-item"><button class="list-item-part btn-remove">x</button><div class="list-item-part">solar </div></li>
+					<li class="list-item"><button class="list-item-part btn-remove">x</button><div class="list-item-part">bernie </div></li>
+				</ul>
+				<input></input><br />
+				<button id="add-blacklist">Add to list</button>
+			</div>
+		-->
+		</div>
+		<br />
+		<button id="save-settings">Save list</button>
+		<button id="restore-defaults" class="right-align">Restore defaults</button>
+	</body>
+</html>
+
