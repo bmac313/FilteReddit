@@ -1,4 +1,4 @@
-# FilteReddit, v0.2
+# FilteReddit, v1.0
 
 ====
 
