@@ -3,7 +3,7 @@
 ====
 
 Description:
-* A Google Chrome extension for Reddit that hides subreddit posts by keyword; it's a lot like bjornstar's Tumblr Savior exension, but much, much simpler. Though it's very basic right now, I'm interested in possibly adding more features in the future.
+* A Google Chrome extension for Reddit that hides subreddit posts by keyword; it's a lot like bjornstar's Tumblr Savior exension, but much, much simpler. This was mostly made as a personal programming exercise to practice my JS skills and to learn how to work with Chrome extensions. Though it's very basic right now, I'm interested in possibly adding more features in the future.
 
 How to install:
 * Download and unzip the repository.
