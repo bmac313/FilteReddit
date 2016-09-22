@@ -13,6 +13,8 @@ How to install:
 * You will be prompted to select a folder. Navigate to the folder where the repository is stored, and select it.
 * FilteReddit should appear the extension list. If so, you're good!
 
-Notes:
+Important notes:
 * This extension ONLY works in Google Chrome, as it makes some use of Chome's APIs.
+* This extension has NOT been tested for compatibility with Reddit Enhancement Suite (RES), so it is unknown whether or not it is compatible. However, it will definitely not work with RES' "Never Ending Reddit" feature enabled (see below).
+* Due to the way this extension works, if you're using any extensions or extension features that enable "endless scrolling" on Reddit, the extension will NOT work correctly.
 
